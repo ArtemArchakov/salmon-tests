@@ -14,8 +14,6 @@ dependencies {
     implementation("io.qameta.allure:allure-rest-assured:2.29.0")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.17.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.17.2")
-    implementation("io.rest-assured:json-schema-validator:5.5.0")
-    implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation("io.rest-assured:rest-assured:5.5.0")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.0")
@@ -25,21 +23,12 @@ dependencies {
     testImplementation("io.qameta.allure:allure-junit5:2.29.0")
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(22))
-    }
-}
-
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-    kotlinOptions {
-        jvmTarget = "22"
-    }
-}
-
 tasks.test {
     useJUnitPlatform()
     testLogging {
         events("passed", "skipped", "failed")
     }
+}
+kotlin {
+    jvmToolchain(21)
 }
