@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ph.salmon.test.WordsCounterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-03-11T17:03:09" hostname="MacBook-Pro-Artem.local" time="0.87">
+  <properties/>
+  <testcase name="count and print the most used words with gwt()" classname="ph.salmon.test.WordsCounterTest" time="0.609"/>
+  <testcase name="count and print the most used words()" classname="ph.salmon.test.WordsCounterTest" time="0.257"/>
+  <system-out><![CDATA[1. et - 110
+2. aut - 64
+3. qui - 61
+4. ut - 54
+5. est - 45
+6. quia - 38
+7. voluptatem - 38
+8. molestiae - 35
+9. rerum - 32
+10. omnis - 32
+1. et - 110
+2. aut - 64
+3. qui - 61
+4. ut - 54
+5. est - 45
+6. quia - 38
+7. voluptatem - 38
+8. molestiae - 35
+9. rerum - 32
+10. omnis - 32
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ph.salmon.test.PostsTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-03-11T17:03:06" hostname="MacBook-Pro-Artem.local" time="3.481">
+  <properties/>
+  <testcase name="update a post()" classname="ph.salmon.test.PostsTest" time="1.656"/>
+  <testcase name="check posts amount()" classname="ph.salmon.test.PostsTest" time="0.189"/>
+  <testcase name="delete a post()" classname="ph.salmon.test.PostsTest" time="0.48"/>
+  <testcase name="get posts filtered by user_id()" classname="ph.salmon.test.PostsTest" time="0.188"/>
+  <testcase name="get a post()" classname="ph.salmon.test.PostsTest" time="0.169"/>
+  <testcase name="patch a post()" classname="ph.salmon.test.PostsTest" time="0.468"/>
+  <testcase name="create a post()" classname="ph.salmon.test.PostsTest" time="0.272"/>
+  <system-out><![CDATA[[2025-03-11 19:03:06.206] Updating post with id: 1
+[2025-03-11 19:03:06.209] PUT request to /1
+[2025-03-11 19:03:07.850] Asserting status code is 200
+[2025-03-11 19:03:07.852] Asserting post equality
+[2025-03-11 19:03:07.899] Getting all posts
+[2025-03-11 19:03:07.899] GET request to 
+[2025-03-11 19:03:08.081] Asserting status code is 200
+[2025-03-11 19:03:08.081] Asserting posts count is 100
+[2025-03-11 19:03:08.093] Deleting post with id: 1
+[2025-03-11 19:03:08.093] DELETE request to /1
+[2025-03-11 19:03:08.571] Asserting status code is 200
+[2025-03-11 19:03:08.576] Getting posts for user id: 1
+[2025-03-11 19:03:08.576] GET request to ?userId=1
+[2025-03-11 19:03:08.758] Asserting status code is 200
+[2025-03-11 19:03:08.758] Asserting all posts belong to user 1
+[2025-03-11 19:03:08.765] Getting post with id: 1
+[2025-03-11 19:03:08.766] GET request to /1
+[2025-03-11 19:03:08.933] Asserting status code is 200
+[2025-03-11 19:03:08.933] Asserting post equality
+[2025-03-11 19:03:08.936] Patching post with id: 1
+[2025-03-11 19:03:08.936] PATCH request to /1
+[2025-03-11 19:03:09.402] Asserting status code is 200
+[2025-03-11 19:03:09.403] Asserting post title is 'new title'
+[2025-03-11 19:03:09.409] Creating new post
+[2025-03-11 19:03:09.409] POST request to 
+[2025-03-11 19:03:09.679] Asserting status code is 201
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
